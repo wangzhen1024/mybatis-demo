@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec78c37b-a6cb-4361-8725-208d80ec4e53" name="Default Changelist" comment="" />
+    <list default="true" id="ec78c37b-a6cb-4361-8725-208d80ec4e53" name="Default Changelist" comment="2020.12.29">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/PersonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/impl/PersonServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/mapper/PersonMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/mapper/PersonMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Mapping/PersonMapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Mapping/PersonMapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Mapping/PersonMapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Mapping/PersonMapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/PersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/PersonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/mapper/PersonMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/mapper/PersonMapper.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +36,7 @@
   <component name="Git.Settings">
     <option name="PATH_TO_GIT" value="D:\Program Files\Git\bin\git.exe" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -57,15 +68,13 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,8 +107,17 @@
       <workItem from="1609247557631" duration="334000" />
       <workItem from="1609247914489" duration="345000" />
       <workItem from="1609248273734" duration="353000" />
-      <workItem from="1609248689545" duration="35000" />
+      <workItem from="1609248689545" duration="1774000" />
+      <workItem from="1609309503492" duration="8639000" />
     </task>
+    <task id="LOCAL-00001" summary="2020.12.29">
+      <created>1609248916646</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609248916646</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,5 +141,7 @@
       <path value="$PROJECT_DIR$/../../../GitRepository" />
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="2020.12.29" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.12.29" />
   </component>
 </project>

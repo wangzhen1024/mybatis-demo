@@ -24,9 +24,14 @@
         from tb_person
     </select>
 
+    <insert id="ins" useGeneratedKeys="true" parameterType="com.example.demo.bean.Person" keyProperty="id">
+        insert into tb_person(name,age,sex) values (#{name},#{age},#{sex})
+    </insert>
 
 
+    <update id="upd" parameterType="com.example.demo.bean.Person" >
+        update tb_person set name=#{name},age=#{age},sex=#{sex} where id=#{id}
 
-
+    </update>
 
 </mapper>

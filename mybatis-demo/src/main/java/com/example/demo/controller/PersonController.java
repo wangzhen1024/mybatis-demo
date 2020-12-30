@@ -2,7 +2,7 @@ package com.example.demo.controller;
 
 
 import com.example.demo.bean.Person;
-import com.example.demo.mapper.PersonMapper;
+import com.example.demo.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,12 +14,12 @@ import java.util.List;
 public class PersonController {
 
     @Autowired
-    private PersonMapper mapper;
+    private PersonService personService;
 
     @ResponseBody
     @RequestMapping("/getOne")
     public String sel(){
-       Person person= mapper.sel(1);
+       Person person= personService.sel(1);
         return person.toString();
     }
 
@@ -27,8 +27,27 @@ public class PersonController {
     @ResponseBody
     @RequestMapping("/getAll")
     public String selAll(){
-        List<Person> list= mapper.selAll();
+        List<Person> list= personService.selAll();
         return list.toString();
     }
+
+    @RequestMapping("/ins")
+    @ResponseBody
+    public int ins(Person person){
+//        person.setName("ins");
+//        person.setAge(19);
+//        person.setSex("男");
+        personService.ins(person);
+        return person.getId();
+    }
+
+    @RequestMapping("/upd")
+    @ResponseBody
+    public String upd(Person person){
+        personService.upd(person);
+        return person.toString();
+    }
+
+
 
 }

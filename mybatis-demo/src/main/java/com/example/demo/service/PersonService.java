@@ -1,13 +1,11 @@
-package com.example.demo.mapper;
+package com.example.demo.service;
 
 import com.example.demo.bean.Person;
-import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
+public interface PersonService {
 
-@Mapper
-public interface PersonMapper {
     Person sel(int id);
 
     List<Person> selAll();
@@ -15,6 +13,4 @@ public interface PersonMapper {
     int ins(Person person);
 
     int upd(Person person);
-
 }
-
