@@ -4,7 +4,13 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
-
+  profiles:
+    #默认使用application-local.properties,logback-my.xml中也将使用name="local"输出日志
+    active: local
 mybatis:
   mapper-locations: classpath:Mapping/*Mapping.xml
   type-aliases-package: com.example.demo.mapper
+logging:
+  #定义logback的名字，否则默认名字必须为:logback-spring.xml
+  config: classpath:logback-my.xml
+

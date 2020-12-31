@@ -13,4 +13,6 @@ public interface PersonService {
     int ins(Person person);
 
     int upd(Person person);
+
+    public void testTran(Person person);
 }

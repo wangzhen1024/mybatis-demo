@@ -5,6 +5,7 @@ import com.example.demo.mapper.PersonMapper;
 import com.example.demo.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -32,5 +33,13 @@ public class PersonServiceImpl implements PersonService {
     @Override
     public int upd(Person person) {
         return mapper.upd(person);
+    }
+
+
+    @Transactional
+    public void testTran(Person person){
+        mapper.ins(person);
+        throw new RuntimeException("运行时异常");
+
     }
 }

@@ -48,6 +48,10 @@ public class PersonController {
         return person.toString();
     }
 
-
+    @RequestMapping("/testTran")
+    @ResponseBody
+    public void testTran(Person person){
+        personService.testTran(person);
+    }
 
 }
